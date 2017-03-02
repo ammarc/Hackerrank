@@ -22,7 +22,6 @@ public class Solution1
 
 
         // Initialize the adj array
-
         for (int i = 0; i < p; i++)
         {
             a = in.nextInt();
@@ -33,11 +32,8 @@ public class Solution1
                 adj[a] = new int[n];
                 for (int j = 0; j < n; j++)
                 {
-
                     adj[a][j] = 0;
-
                 }
-
             }
 
             if(adj[b] == null)
@@ -45,11 +41,8 @@ public class Solution1
                 adj[b] = new int[n];
                 for (int j = 0; j < n; j++)
                 {
-
                     adj[b][j] = 0;
-
                 }
-
             }
 
             // fill up the adj matrix
@@ -78,7 +71,6 @@ public class Solution1
         }
 
         System.out.println(country.size() > 1 ? all_comb : 0);
-
     }
 
     public static ArrayList<Integer> dfs(int[][] adj, int node, int n)
@@ -97,11 +89,7 @@ public class Solution1
                 if(adj[i] != null)
                     explore(adj, i, n, visited);
                 country.add(count);
-
-
             }
-
-
         }
 
         return country;
