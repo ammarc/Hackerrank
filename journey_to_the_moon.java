@@ -4,7 +4,7 @@ import java.util.*;
 import java.math.*;
 
 
-public class Solution1
+public class journey_to_the_moon
 {
     public static int count = 0;
 
